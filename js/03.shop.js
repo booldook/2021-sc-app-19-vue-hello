@@ -14,7 +14,7 @@ new Vue({
 		onReset(e) {
 			this.query = ''
 			this.searchProducts = this.products
-			this.querySelector('.search-wrap input').focus()
+			document.querySelector('.search-wrap input').focus()
 		},
 		onSearch(e) {
 			this.query = e.target.value
