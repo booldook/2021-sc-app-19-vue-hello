@@ -21,12 +21,12 @@
 				<i class="fa fa-times-circle bt-reset"></i>
 			</div>
 			<ul class="list-wrap">
-				<li class="list">
-					<img src="../img/f1.jpg" alt="아이스크림" class="w100">
+				<li class="list" v-for="v in products" :key="v.id">
+					<img :src="v.src" :alt="v.title" class="w100">
 					<ul>
-						<li class="title">아이스크림</li>
-						<li class="desc">달달한 아이스크림</li>
-						<li class="price">$5.99</li>
+						<li class="title">{{ v.title }}</li>
+						<li class="desc">{{ v.description }}</li>
+						<li class="price">${{ v.price }}</li>
 					</ul>
 				</li>
 			</ul>
