@@ -1,29 +1,43 @@
 [{
 	"id": 1,
 	"src": "../img/f1.jpg",
-	"title": "아이스크림"
+	"title": "아이스크림",
+	"description": "달달한 아이스크림",
+	"price": "12.99"
 }, {
 	"id": 2,
 	"src": "../img/f2.jpg",
-	"title": "연어 스테이크"
+	"title": "연어 스테이크",
+	"description": "살살 녹는 연어 구이",
+	"price": "22.99"
 }, {
 	"id": 3,
 	"src": "../img/f3.jpg",
-	"title": "샌드위치"
+	"title": "샌드위치",
+	"description": "가볍게 즐기는 샌드위치",
+	"price": "5.99"
 }, {
 	"id": 4,
 	"src": "../img/f4.jpg",
-	"title": "스테이크"
+	"title": "스테이크",
+	"description": "A++ 등급의 안심 스테이크",
+	"price": "79.99"
 }, {
 	"id": 5,
 	"src": "../img/f5.jpg",
-	"title": "와인"
+	"title": "와인",
+	"description": "프랑스 현지의 맛있는 와인",
+	"price": "35.99"
 }, {
 	"id": 6,
 	"src": "../img/f6.jpg",
-	"title": "체리"
+	"title": "체리",
+	"description": "맛있는 체리 1kg",
+	"price": "19.99"
 }, {
 	"id": 7,
 	"src": "../img/f7.jpg",
-	"title": "크로상"
+	"title": "크로상",
+	"description": "갓 구어낸 빵",
+	"price": "4.99"
 }]

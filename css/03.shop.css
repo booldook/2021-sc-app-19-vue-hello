@@ -1,0 +1,9 @@
+.logo-title {font-size: 1.5em;}
+.search-wrap {position: relative; margin-bottom: 1.75em;}
+.search-wrap .bt-reset {font-size: 1.25em; position: absolute; right: .75em; top: .75em; cursor: pointer;}
+.list-wrap {display: flex; width: 101%;}
+.list-wrap .list {width: 24%; margin-right: 1%; border: 1px solid #ccc; border-radius: .25em; overflow: hidden;}
+.list-wrap .list ul {padding: .5em;}
+.list-wrap .list ul .title {font-size: 1.25em; margin-bottom: .25em;}
+.list-wrap .list ul .desc {margin-bottom: 1em; color: #555;}
+.list-wrap .list ul .price {text-align: center; font-size: 1.25em; color: #3c4553;}
