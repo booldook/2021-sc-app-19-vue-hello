@@ -13,12 +13,12 @@
 	<div id="app">
 		<div class="wrapper">
 			<div class="show-img">
-				<img v-bind:src="src" v-bind:alt="title">
+				<img :src="src" :alt="title">
 				<h2 class="title">{{ title }}</h2>
 			</div>
 			<ul class="thumb-wrap">
-				<li class="thumb" v-for="v in imgs" v-bind:key="v.id">
-					<img v-bind:src="v.src" v-bind:alt="v.title" v-on:click="showImg">
+				<li class="thumb" v-for="v in imgs" :key="v.id">
+					<img :src="v.src" :alt="v.title" @click="showImg">
 				</li>
 			</ul>
 		</div>
