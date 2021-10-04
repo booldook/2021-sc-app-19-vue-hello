@@ -17,11 +17,11 @@
 				<h2 class="logo-title">잘팔려 쇼핑몰</h2>
 			</div>
 			<div class="search-wrap">
-				<input type="text" class="form-control form-control-lg" @keyup="onSearch" v-model="query" autofocus placeholder="검색할 상품내용을 입력하세요.">
+				<input type="text" class="form-control form-control-lg" @input="onSearch" v-model="query" autofocus placeholder="검색할 상품내용을 입력하세요.">
 				<i class="fa fa-times-circle bt-reset" v-show="query.length" @click="onReset"></i>
 			</div>
 			<ul class="list-wrap">
-				<li class="list" v-for="v in searchResult" :key="v.id">
+				<li class="list" v-for="v in searchProducts" :key="v.id">
 					<img :src="v.src" :alt="v.title" class="w100">
 					<ul>
 						<li class="title">{{ v.title }}</li>

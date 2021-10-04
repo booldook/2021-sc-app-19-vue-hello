@@ -1,22 +1,27 @@
 new Vue({
 	el: '#app',
 	data: {
-		products: [],
-		searchResult: [],
+		products: [],	// 원본
+		searchProducts: [],	// 검색결과
 		query: ''
 	},
 	async created() {
 		const { data } = await axios.get('../json/foods.json')
 		this.products = data
-		this.searchResult = data
+		this.searchProducts = data
 	},
 	methods: {
 		onReset(e) {
 			this.query = ''
-			this.searchResult = this.products
+			this.searchProducts = this.products
+			this.querySelector('.search-wrap input').focus()
 		},
 		onSearch(e) {
-			this.searchResult = this.products.filter(v => v.title.includes(this.query))
+			this.query = e.target.value
+			this.searchProducts = this.products.filter(v => {
+				return v.title.toLowerCase().includes(this.query.toLowerCase()) || 
+				v.description.toLowerCase().includes(this.query.toLowerCase())
+			})
 		}
 	}
 })
