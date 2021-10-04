@@ -1,0 +1,5 @@
+.wrapper {margin: 1em auto; max-width: 400px;}
+.show-img img {width: 100%;}
+.thumb-wrap {display: flex;}
+.thumb-wrap .thumb {margin: 0.25em;}
+.thumb-wrap .thumb img {width: 100%;}
